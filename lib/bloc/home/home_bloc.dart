@@ -35,7 +35,6 @@
 //   Stream<HomeState> _mapCallApi(CallApiEvent event) async* {
 //     yield LoadingState();
 //     try {
-//       var res = await Dio().get('https://workedclick.co/api/v1/health');
 //       print(res.data);
 //       this.response = res.data;
 //       print('call success');

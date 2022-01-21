@@ -50,7 +50,7 @@ class Counter with ChangeNotifier, DiagnosticableTreeMixin {
   void callapi() async {
     this.waitLoading();
     try {
-      var res = await Dio().get('https://workedclick.co/api/v1/health');
+      var res = await Dio().get('https://???');
       print('res success');
       print(res.data["message"]);
       // var body = jsonDecode(res.data);
@@ -70,8 +70,7 @@ class Counter with ChangeNotifier, DiagnosticableTreeMixin {
     try {
       final _data = {"key": "Dev"};
 
-      var res = await Dio()
-          .post('https://workedclick.co/api/v1/job-search/search', data: _data);
+      var res = await Dio().post('??', data: _data);
       print('res success');
       print(res.data["jobs"]);
       // print('object body : $body');
